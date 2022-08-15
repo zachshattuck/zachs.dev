@@ -3,33 +3,52 @@ import styles from 'styles/Header.module.scss'
 
 const subtitles = [
   "software developer",
-  "forgets about projects he started",
+  "musician",
+  "forgets about projects he starts",
   "do it wrong until you know better",
-  "what's a decorator again?"
 ]
+const charInterval = 20
+const subtitleChangeInterval = 5000
+const maxSubtitleLength = subtitleChangeInterval / charInterval
+for (let subtitle of subtitles) {
+  if (subtitle.length > maxSubtitleLength)
+    throw new Error(`'${subtitle}' is too long.`)
+}
 
-const Header = () => {
+export const Header = () => {
   const contentRef = useRef<HTMLElement>(null)
   const [subtitleIndex, setSubtitleIndex] = useState(0)
   useEffect(() => {
     setTimeout(async () => {
       if (!contentRef.current) return
+
       let currentIndex = subtitleIndex
       let nextIndex = currentIndex < subtitles.length - 1 ? currentIndex + 1 : 0
-      setSubtitleIndex(nextIndex)
 
       let currentSubtitle = subtitles[currentIndex]
       let nextSubtitle = subtitles[nextIndex]
-      for (let i = 0; i < currentSubtitle.length; i++) {
-        contentRef.current.textContent = currentSubtitle.substring(0, currentSubtitle.length - i)
-        await new Promise(res => { setTimeout(res, 20); });
+
+      //Don't bother doing the animation if the tab is not focused
+      if (document.visibilityState === 'hidden') {
+        contentRef.current.textContent = nextSubtitle
+        setSubtitleIndex(nextIndex)
+        return
       }
 
+      //Mock backspace
+      for (let i = 0; i < currentSubtitle.length; i++) {
+        contentRef.current.textContent = currentSubtitle.substring(0, currentSubtitle.length - i)
+        await new Promise(res => setTimeout(res, charInterval));
+      }
+
+      //Mock typing
       for (let i = 0; i < nextSubtitle.length; i++) {
         contentRef.current.textContent = nextSubtitle.substring(0, i + 1)
-        await new Promise(res => { setTimeout(res, 20); });
+        await new Promise(res => setTimeout(res, charInterval));
       }
-    }, 5000)
+
+      setSubtitleIndex(nextIndex)
+    }, subtitleChangeInterval)
   }, [subtitleIndex, setSubtitleIndex])
   return (
     <header className={styles.header}>
