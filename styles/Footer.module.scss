@@ -3,3 +3,24 @@
   padding: 1rem 1.5rem;
   color: #BBB;
 }
+
+.links {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  >li {
+    margin-right: 1em;
+
+    >a {
+      display: flex;
+      align-items: center;
+
+      >svg {
+        margin-right: .3em;
+      }
+    }
+  }
+}

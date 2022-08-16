@@ -11,6 +11,7 @@ const Home: NextPage = () => {
         <title>zachs.dev</title>
         <meta name="description" content="Web portfolio for Zach Shattuck." />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <Header />
       <main className={styles.main}>
