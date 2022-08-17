@@ -1,7 +1,11 @@
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1rem 1.5rem;
-  color: #BBB;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #AAA;
 }
 
 .links {
@@ -12,7 +16,7 @@
   padding: 0;
 
   >li {
-    margin-right: 1em;
+    margin-right: 0.6em;
 
     >a {
       display: flex;

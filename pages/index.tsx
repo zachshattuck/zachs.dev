@@ -15,7 +15,10 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main className={styles.main}>
-
+        <p>Navigate with the links below:</p>
+        <ul>
+          <li><a href="https://sound.zachs.dev/">Soundlab</a></li>
+        </ul>
       </main>
       <Footer />
     </div>
