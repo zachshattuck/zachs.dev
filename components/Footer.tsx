@@ -5,8 +5,8 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <p className={styles.copyright}>Copyright &copy; Zach Shattuck 2022</p>
-      <ul className={styles.links}>
-        <li><a href="https://github.com/zachshattuck/zachs.dev"><FaGithub /></a></li>
+      <ul className={styles.socials}>
+        <li><a href="https://github.com/zachshattuck"><FaGithub /></a></li>
         <li><a href="https://linkedin.com/in/zacharydshattuck"><FaLinkedin /></a></li>
         {/* <li><a href="#"><FaCode /> Developer Mode</a></li> */}
       </ul>

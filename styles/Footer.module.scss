@@ -8,7 +8,7 @@
   color: #AAA;
 }
 
-.links {
+.socials {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +21,7 @@
     >a {
       display: flex;
       align-items: center;
+      font-size: 2em;
 
       >svg {
         margin-right: .3em;
