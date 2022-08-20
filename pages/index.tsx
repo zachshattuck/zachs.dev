@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <p>Navigation</p>
         <nav>
           <ul>
-            <li><Link href="/gallery">Gallery</Link></li>
+            <li><Link href="/gallery"><a>Gallery</a></Link></li>
           </ul>
         </nav>
         <p>My Apps:</p>

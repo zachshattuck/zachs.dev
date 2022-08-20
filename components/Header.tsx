@@ -73,7 +73,7 @@ export const Header = ({ subtitles = defaultSubtitles }: HeaderProps) => {
           </span>
         </code>
       </h2>
-      {!!pathname && <Link href="/">Home</Link>}
+      {!!pathname && <Link href="/"><a>Home</a></Link>}
     </header>
   )
 }
