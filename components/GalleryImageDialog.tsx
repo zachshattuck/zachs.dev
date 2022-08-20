@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { MouseEventHandler, useEffect } from 'react'
 import styles from 'styles/GalleryImageDialog.module.scss'
 
@@ -23,7 +24,9 @@ const GalleryImageDialog = ({ src, description, onClose }: GalleryImageDialogPro
     <div className={styles.backdrop} onClick={handlebackdropClick}>
       <dialog open className={styles.dialog} onClick={handleDialogClick}>
         {/* <h4>Description:</h4> */}
-        <img src={src} alt={description} />
+        <div className={styles.imageContainer}>
+          <Image layout="fill" className={styles.image} src={src} alt={description} />
+        </div>
         <p>{description}</p>
       </dialog>
     </div>

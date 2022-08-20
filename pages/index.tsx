@@ -2,6 +2,7 @@ import Footer from 'components/Footer'
 import Header from 'components/Header'
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from 'styles/Home.module.scss'
 
 const Home: NextPage = () => {
@@ -18,7 +19,7 @@ const Home: NextPage = () => {
         <p>Navigation</p>
         <nav>
           <ul>
-            <li><a href="/gallery">Gallery</a></li>
+            <li><Link href="/gallery">Gallery</Link></li>
           </ul>
         </nav>
         <p>My Apps:</p>

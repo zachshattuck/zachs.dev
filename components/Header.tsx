@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import styles from 'styles/Header.module.scss'
 
@@ -60,7 +61,7 @@ export const Header = ({ subtitles = defaultSubtitles }: HeaderProps) => {
 
       setSubtitleIndex(nextIndex)
     }, subtitleChangeInterval)
-  }, [subtitleIndex, setSubtitleIndex])
+  }, [subtitleIndex, setSubtitleIndex, subtitles])
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>Zach Shattuck</h1>
@@ -72,7 +73,7 @@ export const Header = ({ subtitles = defaultSubtitles }: HeaderProps) => {
           </span>
         </code>
       </h2>
-      {!!pathname && <a href="/">Home</a>}
+      {!!pathname && <Link href="/">Home</Link>}
     </header>
   )
 }
