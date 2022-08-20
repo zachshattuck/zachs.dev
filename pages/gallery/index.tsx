@@ -30,7 +30,10 @@ const Gallery: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Zach S. &mdash; Gallery</title>
+        <title>zachs.dev &mdash; Gallery</title>
+	<meta name="description" content="Gallery of web design and other work by Zach Shattuck." />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <Header subtitles={gallerySubtitles} />
       <main className={styles.main}>
