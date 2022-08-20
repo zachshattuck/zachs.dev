@@ -15,6 +15,28 @@
         "source": "/gallery/",
         "destination": "/gallery.html"
       }
+    ],
+    "redirects": [
+      {
+        "source": "/soundlab",
+        "destination": "https://sound.zachs.dev/",
+        "type": 301
+      },
+      {
+        "source": "/soundlab/",
+        "destination": "https://sound.zachs.dev/",
+        "type": 301
+      },
+      {
+        "source": "/sound",
+        "destination": "https://sound.zachs.dev/",
+        "type": 301
+      },
+      {
+        "source": "/sound/",
+        "destination": "https://sound.zachs.dev/",
+        "type": 301
+      }
     ]
   }
 }
