@@ -4,7 +4,15 @@ const nextConfig = {
   swcMinify: true,
   images: {
     loader: 'akamai',
-    path: ''
+    path: '/'
+  },
+  exportPathMap: async function(defaultPathMap, { dev, dir, outDir, distDir, buildDir }) {
+    return {
+      "/": { page: "/" },
+      "/gallery": { page: "/gallery" },
+      // Using firebase rewrites instead
+      // "/gallery/index": { page: "/gallery" },
+    }
   }
 }
 

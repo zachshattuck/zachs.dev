@@ -41,45 +41,45 @@ const Gallery: NextPage = () => {
               <Image
                 className={styles.image}
                 layout="fill"
-                src="/gallery/ui/oshcut-order-calendar-1.png"
+                src="/gallery-images/ui/oshcut-order-calendar-1.png"
                 alt="Calendar-based order list view for OSHCut Laser (Orem, Utah)."
-                onClick={() => showDialog("/gallery/ui/oshcut-order-calendar-1.png", "Calendar-based order list view for OSHCut Laser (Orem, Utah).")}
+                onClick={() => showDialog("/gallery-images/ui/oshcut-order-calendar-1.png", "Calendar-based order list view for OSHCut Laser (Orem, Utah).")}
               />
             </div>
             <div className={styles.imageContainer}>
               <Image
                 className={styles.image}
                 layout="fill"
-                src="/gallery/ui/oshcut-po-system.png"
+                src="/gallery-images/ui/oshcut-po-system.png"
                 alt="Purchase order management system for OSHCut Laser (Orem, Utah)."
-                onClick={() => showDialog("/gallery/ui/oshcut-po-system.png", "Purchase order management system for OSHCut Laser (Orem, Utah).")}
+                onClick={() => showDialog("/gallery-images/ui/oshcut-po-system.png", "Purchase order management system for OSHCut Laser (Orem, Utah).")}
               />
             </div>
             <div className={styles.imageContainer}>
               <Image
                 className={styles.image}
                 layout="fill"
-                src="/gallery/ui/oshcut-dev-model-data.png"
+                src="/gallery-images/ui/oshcut-dev-model-data.png"
                 alt="Developer statistics popup for OSHCut Laser (Orem, Utah)."
-                onClick={() => showDialog("/gallery/ui/oshcut-dev-model-data.png", "Developer statistics popup for OSHCut Laser (Orem, Utah).")}
+                onClick={() => showDialog("/gallery-images/ui/oshcut-dev-model-data.png", "Developer statistics popup for OSHCut Laser (Orem, Utah).")}
               />
             </div>
             <div className={styles.imageContainer}>
               <Image
                 className={styles.image}
                 layout="fill"
-                src="/gallery/ui/oshcut-chat-client.png"
+                src="/gallery-images/ui/oshcut-chat-client.png"
                 alt="Chat client mockup for OSHCut Laser (Orem, Utah)."
-                onClick={() => showDialog("/gallery/ui/oshcut-chat-client.png", "Chat client mockup for OSHCut Laser (Orem, Utah).")}
+                onClick={() => showDialog("/gallery-images/ui/oshcut-chat-client.png", "Chat client mockup for OSHCut Laser (Orem, Utah).")}
               />
             </div>
             <div className={styles.imageContainer}>
               <Image
                 className={styles.image}
                 layout="fill"
-                src="/gallery/ui/oshcut-markdown-note-creator.png"
+                src="/gallery-images/ui/oshcut-markdown-note-creator.png"
                 alt="Fully-featured Markdown note creation dialog for OSHCut Laser (Orem, Utah)."
-                onClick={() => showDialog("/gallery/ui/oshcut-markdown-note-creator.png", "Fully-featured Markdown note creation dialog for OSHCut Laser (Orem, Utah).")}
+                onClick={() => showDialog("/gallery-images/ui/oshcut-markdown-note-creator.png", "Fully-featured Markdown note creation dialog for OSHCut Laser (Orem, Utah).")}
               />
             </div>
           </div>
@@ -91,18 +91,18 @@ const Gallery: NextPage = () => {
               <Image
                 className={styles.image}
                 layout="fill"
-                src="/gallery/design/fj-devil.png"
+                src="/gallery-images/design/fj-devil.png"
                 alt="&lquot;Devil&rquot; design for Farewell Jasper."
-                onClick={() => showDialog("/gallery/design/fj-devil.png", "\"Devil\" design for Farewell Jasper.")}
+                onClick={() => showDialog("/gallery-images/design/fj-devil.png", "\"Devil\" design for Farewell Jasper.")}
               />
             </div>
             <div className={styles.imageContainer}>
               <Image
                 className={styles.image}
                 layout="fill"
-                src="/gallery/design/fj-spotify-cover.png"
+                src="/gallery-images/design/fj-spotify-cover.png"
                 alt="Spotify artist cover image I designed."
-                onClick={() => showDialog("/gallery/design/fj-spotify-cover.png", "Spotify artist cover image I designed.")}
+                onClick={() => showDialog("/gallery-images/design/fj-spotify-cover.png", "Spotify artist cover image I designed.")}
               />
             </div>
           </div>
