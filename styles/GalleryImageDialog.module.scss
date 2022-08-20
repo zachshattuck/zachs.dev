@@ -1,0 +1,30 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+}
+
+.dialog {
+  border: none;
+  outline: none;
+  width: calc(100vw - 1.5rem);
+  max-width: 1000px;
+  max-height: calc(100vh - 1.5rem);
+  overflow-y: auto;
+  background-color: #111;
+  color: #EEE;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+
+  img {
+    width: 100%;
+  }
+}
