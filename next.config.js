@@ -6,14 +6,14 @@ const nextConfig = {
     loader: 'akamai',
     path: '/'
   },
-  exportPathMap: async function(defaultPathMap, { dev, dir, outDir, distDir, buildDir }) {
-    return {
-      "/": { page: "/" },
-      "/gallery": { page: "/gallery" },
-      // Using firebase rewrites instead
-      // "/gallery/index": { page: "/gallery" },
-    }
-  }
+  // // Using firebase rewrites instead
+  // exportPathMap: async function(defaultPathMap, { dev, dir, outDir, distDir, buildDir }) {
+  //   return {
+  //     "/": { page: "/" },
+  //     "/gallery": { page: "/gallery" },
+  //     // "/gallery/index": { page: "/gallery" },
+  //   }
+  // }
 }
 
 module.exports = nextConfig
