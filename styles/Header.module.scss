@@ -1,5 +1,6 @@
 .header {
   padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .title {
@@ -9,21 +10,16 @@
 
 .subtitle {
   margin: 0;
-  margin-top: 10px
 }
 
 .terminal {
   display: block;
+  margin: .8rem 0;
   width: 100%;
   max-width: 500px;
   height: calc(2em + 0.75rem*2);
   font-family: Consolas, monospace;
   font-weight: lighter;
-
-  &::before {
-    content: ":~$ ";
-    color: yellowgreen;
-  }
 
   &::after {
     content: '▂';
@@ -35,6 +31,12 @@
       }
     }
   }
+}
+
+.terminalDirectory {
+  $pathname: attr(data-content);
+  content: ':~#{$pathname}$';
+  color: yellowgreen;
 }
 
 @media (prefers-color-scheme: dark) {}

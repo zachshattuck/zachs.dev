@@ -15,6 +15,12 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main className={styles.main}>
+        <p>Navigation</p>
+        <nav>
+          <ul>
+            <li><a href="/gallery">Gallery</a></li>
+          </ul>
+        </nav>
         <p>My Apps:</p>
         <ul>
           <li><a href="https://sound.zachs.dev/">Soundlab</a></li>
